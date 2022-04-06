@@ -49,7 +49,7 @@ namespace afternoonChallenge040622.Repositories
       SET
         name = @Name,
         color = @Color,
-        price = @Year
+        year = @Year
         WHERE id = @Id;
       ";
       _db.Execute(sql, original);
