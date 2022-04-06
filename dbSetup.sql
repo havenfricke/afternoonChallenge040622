@@ -6,18 +6,13 @@ CREATE TABLE IF NOT EXISTS accounts(
   email varchar(255) COMMENT 'User Email',
   picture varchar(255) COMMENT 'User Picture'
 ) default charset utf8 COMMENT '';
-CREATE TABLE IF NOT EXISTS
-/*Model name (lowercase)*/(
-  /*
-        add properties inside your model
-        
-        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        createdAt DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT 'Time Created',
-        updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Last Update',
-        name TEXT NOT NULL or VARCHAR(number of letters),
-        description TEXT,
-        price DECIMAL(allowed numbers, allowed decimal places)
-        */
+CREATE TABLE IF NOT EXISTS car(
+  id INT NOT NULL AUTO_INCREMENT PRIMARy KEY,
+  createdAt DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT 'Time Created',
+  updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Last Update',
+  name TEXT NOT NULL,
+  color TEXT,
+  year DECIMAL(4, 0)
 ) default charset utf8;
 /*CRUD METHODS
 
